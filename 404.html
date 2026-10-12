@@ -2,57 +2,67 @@
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>۴۰۴ | مسیر پیدا نشد</title>
+    <title>404 | یافت نشد</title>
     <style>
+        :root {
+            --disco-blue: #00f2ff; /* آبی جیغ/نئونی */
+            --bg-color: #050505;
+        }
         body {
             margin: 0;
             padding: 0;
-            background-color: #0a0a0a;
-            color: #d1d1d1;
-            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--bg-color);
+            color: white;
+            font-family: 'Inter', sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            text-align: center;
         }
-        .container {
-            max-width: 600px;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 8rem;
+        .code-404 {
+            font-size: 15rem;
+            font-weight: 900;
             margin: 0;
-            color: #ff4757; /* رنگ قرمز ملایم برای خطای سیستمی */
-            letter-spacing: -5px;
+            color: var(--disco-blue);
+            text-shadow: 0 0 30px rgba(0, 242, 255, 0.5);
+            letter-spacing: -10px;
         }
-        p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-            color: #888;
+        .message {
+            font-size: 1.5rem;
+            margin-top: -20px;
+            color: #ccc;
+            font-weight: 300;
         }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 25px;
-            background-color: transparent;
-            border: 1px solid #d1d1d1;
-            color: #d1d1d1;
+        .home-link {
+            margin-top: 30px;
+            color: var(--disco-blue);
             text-decoration: none;
-            transition: all 0.3s ease;
+            border: 1px solid var(--disco-blue);
+            padding: 10px 20px;
+            transition: 0.3s;
         }
-        a:hover {
-            background-color: #d1d1d1;
-            color: #0a0a0a;
+        .home-link:hover {
+            background: var(--disco-blue);
+            color: black;
+        }
+        .footer-name {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>404</h1>
-        <p>به نظر می‌رسد این مسیر وجود ندارد یا به جای دیگری منتقل شده است.</p>
-        <a href="/">بازگشت به صفحه اصلی</a>
-    </div>
+
+    <h1 class="code-404">404</h1>
+    <p class="message">اینجا هیچی نیست...!</p>
+    <a href="/" class="home-link">برگشت به ریشه</a>
+
+    <div class="footer-name">kianAfraz</div>
+
 </body>
 </html>
